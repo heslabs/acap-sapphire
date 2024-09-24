@@ -12,29 +12,26 @@ EDGE+ Mini-ITX [[Datasheet]](https://www.sapphiretech.com/en/commercial/edge-plu
   * 3 optional I / O expansion cards available
 
 ---
-<img src="https://github.com/user-attachments/assets/4cb70996-82b2-4164-8cfe-77b972de12d5" width=600>
+<img src="https://github.com/user-attachments/assets/4cb70996-82b2-4164-8cfe-77b972de12d5" width=400>
 
 ---
 ## AMD Versal™AI Edge VE2302 FPGA
 
-* Versal Gen1 [Broduct Bried](https://www.amd.com/content/dam/amd/en/documents/products/adaptive-socs-and-fpgas/versal/amd-versal-ai-edge-product-brief.pdf)
+* Versal Gen1 [Product Brief](https://www.amd.com/content/dam/amd/en/documents/products/adaptive-socs-and-fpgas/versal/amd-versal-ai-edge-product-brief.pdf)
 * Versal Gen2 [Product Brief](https://www.amd.com/content/dam/amd/en/documents/products/adaptive-socs-and-fpgas/versal/versal-ai-edge-gen2-product-brief.pdf)
 
 Feature
 * Processing System
   * Up to 1.65 GHz dual-core Arm® Cortex®-A72 application processor for Linux®-class operating systems
   * Up to 750 MHz dual-core Arm Cortex-R5F real-time processor with low latency and determinism
-    
 * Programmable Logic
   * Scalable and adaptable sensor fusion for any combination of sensor or data types
   * Dynamic Function Exchange (DFx) to swap functionality in milliseconds, reducing device cost and system power
-
 * AI Engines and DSP Engines
   * AI Engines-ML (AIE-MLs) for low power and low latency inference, with native support for INT8, BFLOAT16
   * C-programmable for software developers and library-base design for data scientists
   * DSP Engines for diverse workloads including image signal processing, support for single-and half-precision
  floating point
-
 * Accelerator RAM
   * 4 MB of on-chip memory for high bandwidth memory access from any engine
 * Programmable I/O
@@ -44,6 +41,21 @@ Feature
 
 ---
 
+<img src="https://github.com/user-attachments/assets/89ba01e1-541f-4040-97db-d5aa06a65d5a" width=800>
+
+---
+<img src="https://github.com/user-attachments/assets/f7fa734d-03a9-4220-8106-e40bde8adf18" width=800>
+
+
+---
+## Zynq UltraScale+ MPSoC [Product Table](https://www.mouser.com/pdfDocs/zynq-ultrascale-plus-product-selection-guide.pdf?srsltid=AfmBOooOQhjYQUjg0GPkM4WQmRDh4BYrCvvwIOHUXzQv901teMY21niz)
+
+<img src="https://github.com/user-attachments/assets/6adc7719-2477-44cb-b5b7-488475c62f65" width=800>
+
+---
+<img src="https://github.com/user-attachments/assets/a9bab743-692f-4789-8af4-783888ebcd2e" width=600>
+
+---
 <img src="https://github.com/user-attachments/assets/526f5354-216f-4bc2-b544-e63d2add2c21" width=600>
 
 ---
