@@ -9,7 +9,7 @@ Password:
 2. Connect to SAPPHIRE EDGE+ from cloud PC
 ```
 ssh demo@192.168.51.134 -X
-Password: demo!@# 
+Password:
 ```
 
 3. Login to Versal CA72
