@@ -1,53 +1,48 @@
-# Installation Guide
+# Connecting to Board
 
-### Remote access to the IPC
+## Remote access to the IPC
 ```
    $ ssh demo@192.168.50.xxx -X
 ```
 
----
-### Test: "PCIe"
-```
-  $ lspci -vd 10ee:
-```
-<img src="https://github.com/user-attachments/assets/64880e3b-c7c3-498d-870e-2cdbc1b924a6" width=600>
+### Login to Versal CA72
+* Login: xilinx
+* Password: petalinux
 
----
-### Test: "XRT (Xilinx Runtime)"
- 
+### Connect to APU serial port
 ```
-  $ source /opt/xilinx/xrt/setup.sh
-  $ xbmgmt examine
+$ sudo picocom -b 115200 /dev/ttyUSB1
 ```
-<img src="https://github.com/user-attachments/assets/d3491350-0035-448e-8552-bfbd094000dd" width=600>
 
----
-### Test: "Verify"
+### Connect to PLM/RPU serial port
 ```
-  $ source /opt/xilinx/xrt/setup.sh
-  $ xbutil validate -r verify -d --verbose
+$ sudo picocom -b 115200 /dev/ttyUSB2
 ```
-<img src="https://github.com/user-attachments/assets/565951d2-8d6f-4f1a-b132-3125234119ab" width=600>
 
----
-### Test: "DMA"
-```
-  $ xbutil validate -r dma -d --verbose
-```
-<img src="https://github.com/user-attachments/assets/629a4b79-1c68-4d37-bd37-0c05bd893616" width=600>
+<img src="https://github.com/user-attachments/assets/7dc21a82-b57f-430b-875d-e0b08c8f5b94" width=600>
 
-### Test: "Bandwidth"
+## Installation Guide
+
+* [FPGA Software Installation and Firmware Update](https://www.sapphiretech.com/en/commercial/edge-plus-vpr-4616-sys)
+
+### Install Buntu OS
+
+* Ubuntu 22.04，Linux Kernel version 5.15.0 
+<img src="https://github.com/user-attachments/assets/1cd1413f-91f6-41e8-b280-a8387cdf95a8" width=600>
+
+* Modify "grub"
 ```
-  $ xbutil validate -r mem-bw -d --verbose
+$ uname -a
+$ vi /etc/default/grub
+GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 5.15.0-###-generic
 ```
-<img src="https://github.com/user-attachments/assets/1a7810c6-af00-4bba-91b8-2281a4e60d34" width=600>
+* Update grub config & reboot
+```
+$ sudo update-grub
+$ sudo reboot now
+```
+
+### Installing XTR
 
 
-### Test: "AIE"
-```
-  $ xbutil validate -r aie -d --verbose
-```
-<img src="https://github.com/user-attachments/assets/a6f2ce65-7036-45de-ae35-7020ccbfa7bf" width=600>
-
----
 
