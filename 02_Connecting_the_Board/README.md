@@ -23,7 +23,7 @@ Password: petalinux
 $ sudo picocom -b 115200 /dev/ttyUSB1
 ```
 
-5. Connect to PLM/RPU serial port by serial port
+5. Connect to PLM/RPU serial port from EDGE+ box by serial port
 ```
 $ sudo picocom -b 115200 /dev/ttyUSB2
 ```
