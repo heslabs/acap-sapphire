@@ -3,10 +3,25 @@
 GitHub examples
 https://github.com/Xilinx/emb-plus-examples
 
-## PL 2D Filter Test
+
+---
+## Test application: PL 2D Filter
 ```
-$ export PATH=”/opt/xilinx/filter2d-pl:$PATH”
+$ source /opt/xilinx/xrt/setup.sh
+$ export PATH="/opt/xilinx/filter2d-pl:$PATH"
+
+# Filter2d Accelertation Example Application Usage:
+$ <Executable Name> <Filter> -i [path/testimg] -u [path/user_xclbin]
+
+# Use -h to find available filter options
+$ <Executable Name> -h
+
+# Example using default test image
 $ filter2D_accel_pl.elf Blur
 ```
 
-<img src="https://github.com/user-attachments/assets/d7c2c387-ba36-4c9b-a1c1-69a67a8904c5" width=800>
+---
+<img src="https://github.com/user-attachments/assets/ed9e0a0a-afe8-40c7-ac74-a73a1f6491f3" width=800>
+ 
+
+--- 
