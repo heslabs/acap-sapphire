@@ -48,7 +48,7 @@ Feature
 
 
 ---
-## Zynq UltraScale+ MPSoC [Product Table](https://www.mouser.com/pdfDocs/zynq-ultrascale-plus-product-selection-guide.pdf?srsltid=AfmBOooOQhjYQUjg0GPkM4WQmRDh4BYrCvvwIOHUXzQv901teMY21niz)
+## Zynq UltraScale+ MPSoC [[Product Table]](https://www.mouser.com/pdfDocs/zynq-ultrascale-plus-product-selection-guide.pdf?srsltid=AfmBOooOQhjYQUjg0GPkM4WQmRDh4BYrCvvwIOHUXzQv901teMY21niz)
 
 <img src="https://github.com/user-attachments/assets/6adc7719-2477-44cb-b5b7-488475c62f65" width=800>
 
