@@ -36,21 +36,66 @@ cache size      : 512 KB
 $ apt install -y putty
 $ sudo putty -serial -sercfg 115200,8,n,1,N -fn "client:Ubuntu Mono 16"  /dev/ttyUSB1
 ```
+
+
+
 ---
-4. Connect to APU serial port from EDGE+ box by serial port
+### Connect to APU serial port from EDGE+ box by serial port
+
+ 
+```
+demo@embplus:~$ sudo picocom -b 115200 /dev/ttyUSB1
+picocom v3.1
+Type [C-a] [C-h] to see available commands
+Terminal ready
+```
+
+#### picocom available command (Ctrl-h)
+```
+*** Picocom commands (all prefixed by [C-a])
+
+*** [C-x] : Exit picocom
+*** [C-q] : Exit without reseting serial port
+*** [C-b] : Set baudrate
+*** [C-u] : Increase baudrate (baud-up)
+*** [C-d] : Decrease baudrate (baud-down)
+*** [C-i] : Change number of databits
+*** [C-j] : Change number of stopbits
+*** [C-f] : Change flow-control mode
+*** [C-y] : Change parity mode
+*** [C-p] : Pulse DTR
+*** [C-t] : Toggle DTR
+*** [C-g] : Toggle RTS
+*** [C-|] : Send break
+*** [C-c] : Toggle local echo
+*** [C-w] : Write hex
+*** [C-s] : Send file
+*** [C-r] : Receive file
+*** [C-v] : Show port settings
+*** [C-h] : Show this message
 
 ```
-$ sudo picocom -b 115200 /dev/ttyUSB1
+
+---
+#### Press Enter to login 
+```
+emb-plus-ve2302 login: petalinux
 Password: petalinux
 ```
 
+<img src="https://github.com/user-attachments/assets/7ce9862e-0bb4-46db-a9cf-f04fc20601cd" width=450>
+
 ---
-5. Connect to PLM/RPU serial port from EDGE+ box by serial port
+
+<img src="https://github.com/user-attachments/assets/696df224-bb72-4b31-ac55-87db3eb2217b" width=750>
+ 
+ 
+
+---
+### Connect to PLM/RPU serial port from EDGE+ box by serial port
 
 ```
 $ sudo picocom -b 115200 /dev/ttyUSB2
 Password: petalinux
 ```
 
----
-<img src="https://github.com/user-attachments/assets/7dc21a82-b57f-430b-875d-e0b08c8f5b94" width=600>
