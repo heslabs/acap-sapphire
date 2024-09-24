@@ -87,6 +87,7 @@ $ sudo dpkg -i xrt-aie-test-ve2302_0.5.deb
 #### Install Versal APU SW:
 ```
 $ sudo dpkg -i xrt-apu-linux-ve2302_0.5.deb
+```
 
 ---
 ### Reboot system and update FPGA Firmqare
@@ -103,7 +104,7 @@ $ sudo dpkg -i xrt-apu-linux-ve2302_0.5.deb
    * https://www.sapphiretech.com/en/commercial/edge-plus-vpr_4616#Download
 
 
-```
+
 ### Base Test
 
 #### Install
