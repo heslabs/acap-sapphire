@@ -89,7 +89,11 @@ Password: petalinux
 
 <img src="https://github.com/user-attachments/assets/696df224-bb72-4b31-ac55-87db3eb2217b" width=750>
  
- 
+---
+#### APU Info
+
+<img src="https://github.com/user-attachments/assets/92d3a09a-672f-4dd6-bee6-f6adfa613653" width=750>
+
 
 ---
 ### Connect to PLM/RPU serial port from EDGE+ box by serial port
