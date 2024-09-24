@@ -3,6 +3,9 @@
 GitHub examples
 https://github.com/Xilinx/emb-plus-examples
 
+---
+<img src="https://github.com/user-attachments/assets/2e19daa2-e281-4bfb-a384-fe40ba4cd517" width=800>
+
 
 ---
 ## Test application: PL 2D Filter
