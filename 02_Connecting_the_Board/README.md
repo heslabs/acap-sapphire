@@ -8,8 +8,9 @@ Password:
 
 2. Connect to SAPPHIRE EDGE+ box from cloud PC
 ```
-ssh demo@192.168.51.134 -X
+$ ssh demo@192.168.51.134 -X
 Password:
+$ sudo usermod -aG sudo <user>
 ```
 
 3. Connect to Versal CA72 from EDGE+ box by SSH
