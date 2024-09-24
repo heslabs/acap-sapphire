@@ -1,8 +1,15 @@
 # Connecting to Board
 
-## Remote access to the IPC
+1. Remote access to cloud PC
 ```
-   $ ssh demo@192.168.50.xxx -X
+$ ssh acap@59.124.169.157 -X
+Password:
+```
+
+2. Connect to SAPPHIRE EDGE+ from cloud PC
+```
+ssh demo@192.168.51.134 -X
+Password: demo!@# 
 ```
 
 ### Login to Versal CA72
