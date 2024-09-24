@@ -77,7 +77,9 @@ Terminal ready
 ```
 
 ---
-#### Press Enter to login 
+#### Login to APU
+Press Enter to login 
+
 ```
 emb-plus-ve2302 login: petalinux
 Password: petalinux
