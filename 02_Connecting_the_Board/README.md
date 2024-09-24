@@ -12,11 +12,13 @@ ssh demo@192.168.51.134 -X
 Password: demo!@# 
 ```
 
-### Login to Versal CA72
-* Login: xilinx
-* Password: petalinux
+3. Login to Versal CA72
+```
+Login: xilinx
+Password: petalinux
+```
 
-### Connect to APU serial port
+4. Connect to APU serial port
 ```
 $ sudo picocom -b 115200 /dev/ttyUSB1
 ```
