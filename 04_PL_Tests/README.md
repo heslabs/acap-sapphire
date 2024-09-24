@@ -1,5 +1,8 @@
 # PL Test
 
+GitHub examples
+https://github.com/Xilinx/emb-plus-examples
+
 ## PL 2D Filter Test
 ```
 $ export PATH=”/opt/xilinx/filter2d-pl:$PATH”
