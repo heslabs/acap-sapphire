@@ -2,18 +2,22 @@
 
 * [FPGA Software Installation and Firmware Update](https://www.sapphiretech.com/en/commercial/edge-plus-vpr-4616-sys)
 
+---
 ### Install Buntu OS
 
 * Ubuntu 22.04，Linux Kernel version 5.15.0 
 <img src="https://github.com/user-attachments/assets/1cd1413f-91f6-41e8-b280-a8387cdf95a8" width=600>
 
-* Modify "grub"
+---
+#### Modify "grub"
 ```
 $ uname -a
 $ vi /etc/default/grub
 GRUB_DEFAULT="Advanced options for Ubuntu>Ubuntu, with Linux 5.15.0-###-generic
 ```
-* Update grub config & reboot
+
+---
+#### Update grub config & reboot
 ```
 $ sudo update-grub
 $ sudo reboot now
@@ -33,7 +37,7 @@ $ sudo reboot now
 $ sudo apt install linux-headers-$(uname -r)
 ```
 
-* Install the xrt package
+#### Install the xrt package
 ```
 $ sudo dpkg -i xrt_202410.<date>_22.04-amd64-xrt.deb
 ```
@@ -65,7 +69,7 @@ $ sudo dpkg -i xrt-emb-plus-ve2302-base_0.5.deb
 
 * Move the packages to the Embedded+ platform
 
-* Install XRT test bitstreams
+#### Install XRT test bitstreams
 ```
 $ sudo dpkg -i xrt-verify-test-ve2302_0.5.deb
 $ sudo dpkg -i xrt-bandwidth-dma-test-ve2302_0.5.deb
@@ -79,26 +83,55 @@ $ sudo dpkg -i xrt-aie-test-ve2302_0.5.deb
 
 * Move the package to the Embedded+ platform.
 
-* Install Versal APU SW:
+---
+#### Install Versal APU SW:
 ```
 $ sudo dpkg -i xrt-apu-linux-ve2302_0.5.deb
 
 ---
 ### Reboot system and update FPGA Firmqare
 
-* Update FPGA firmware 
+#### Update FPGA firmware 
 
-   * The VPR-4616-MB and VPR-4616-SYS are both shipped with OSPI image. You can check their version with “xbmgmt examine” command. A UUID of 00000000-0000-0000-0000-000079DB078F corresponds to emb-plus-ospi-emb-plus-ve2302-20240620051522.bin (0.5 release). Upgrading OSPI is necessary if the UUID does not match the release.
+* The VPR-4616-MB and VPR-4616-SYS are both shipped with OSPI image. You can check their version with “xbmgmt examine” command. A UUID of 00000000-0000-0000-0000-000079DB078F corresponds to emb-plus-ospi-emb-plus-ve2302-20240620051522.bin (0.5 release). Upgrading OSPI is necessary if the UUID does not match the release.
 
-* Software requirements
+#### Software requirements
    1. Vivado Installed
    2. FPGA(Xilinx) F/W: Versal OSPI image file (*.bin) and PDI file (*.pdi), which can be downloaded from
 
-* Reference
+#### Reference
    * https://www.sapphiretech.com/en/commercial/edge-plus-vpr_4616#Download
 
 
-
 ```
+### Base Test
+
+#### Install
+  * Embedded+ VE2302 "base" device package
+  * Embedded+ VE2302 XRT platform test bitstream packages
+  * Versal APU SW package ：
+
+---
+#### On-target Self Test
+```
+$ lcpci -vd 10ee:
+```
+<img src="https://github.com/user-attachments/assets/12a8a7d0-8336-402b-afe0-78a49121dd44" width=600>
+
+---
+#### XRT Platform Inspection
+  * VERSAL devie: emb-plus， 0000:01:00.0
+  * UUID: 00009447EE7C
+```
+$ source /opt/xilinx/xrt/setup.sh
+```
+<img src="https://github.com/user-attachments/assets/f507ae3a-4278-4e00-afa2-e49396d2ef47" width=600>
+
+---
+#### Verify Test 
+  * The "Verify" test is a simple "hello world" application for testing core ability to download a user kernel captured as an xclbin and have an expected data transfer read back from that kernel "Hello World".
+
+
+
 
 
